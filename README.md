@@ -2,10 +2,11 @@
 
 A webhook for automatically deploying after a Docker Hub build. 
 
-## Install (Ubuntu)
+## Install
 
 ```shell
-sudo apt-get install php-cli
+sudo apt update
+sudo apt install php
 ```
 
 ## Run
