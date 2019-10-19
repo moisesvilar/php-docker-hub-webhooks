@@ -1,4 +1,10 @@
 <?php
+  $expectedKey = 'EXPECTED_KEY';
+  $requestKey = $_GET['k'];
+  if ($expectedKey !== $requestKey) {
+    echo "Unauthorized";
+    exit(-1);
+  }
   $trigger_tag = "latest";
   $repo = "moisesvilar/queseriabarral";
   $post_data = json_decode(file_get_contents('php://input'), true);
