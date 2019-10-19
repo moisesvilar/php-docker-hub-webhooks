@@ -12,5 +12,12 @@ sudo apt install php
 ## Run
 
 ```shell
-php -S 0.0.0.0:8000
+sudo chmod +x run.sh
+run.sh
+```
+
+## Stop
+```shell
+sudo chmod +x stop.sh
+stop.sh
 ```
