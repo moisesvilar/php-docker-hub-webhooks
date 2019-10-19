@@ -5,8 +5,8 @@
     echo "Unauthorized";
     exit(-1);
   }
-  $trigger_tag = "latest";
-  $repo = "moisesvilar/queseriabarral";
+  $trigger_tag = "expectedTag";
+  $repo = "user/repo";
   $post_data = json_decode(file_get_contents('php://input'), true);
   $tag = $post_data["push_data"]["tag"];
   if ($tag === $trigger_tag) {
