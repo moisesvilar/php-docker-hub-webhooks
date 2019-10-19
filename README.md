@@ -13,11 +13,11 @@ sudo apt install php
 
 ```shell
 sudo chmod +x run.sh
-run.sh
+./run.sh
 ```
 
 ## Stop
 ```shell
 sudo chmod +x stop.sh
-stop.sh
+./stop.sh
 ```

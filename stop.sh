@@ -1,2 +1,1 @@
-kill -9 `cat save_pid`
-rm save_pid
+kill -9 `pidof php`
