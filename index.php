@@ -1,11 +1,11 @@
 <?php
   $trigger_tag = "latest";
+  $repo = "moisesvilar/queseriabarral";
   $post_data = json_decode(file_get_contents('php://input'), true);
   $tag = $post_data["push_data"]["tag"];
   if ($tag === $trigger_tag) {
-    $image = "user/repo:" . $trigger_tag;
-    echo `docker pull "$image"`;
-    echo `deploy_my_server.sh`;
-  } else {
+    echo `/root/update-docher.sh`;
+  } 
+  else {
     echo "Ignoring tag " . $tag;
   }
