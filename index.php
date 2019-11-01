@@ -1,12 +1,12 @@
 <?php
-  $expectedKey = 'EXPECTED_KEY';
+  // $expectedKey = 'EXPECTED_KEY';
+  // $trigger_tag = 'expectedTag';
+  // $repo = 'user/repo';
   $requestKey = $_GET['k'];
   if ($expectedKey !== $requestKey) {
     echo "Unauthorized";
     exit(-1);
   }
-  $trigger_tag = "expectedTag";
-  $repo = "user/repo";
   $post_data = json_decode(file_get_contents('php://input'), true);
   $tag = $post_data["push_data"]["tag"];
   if ($tag === $trigger_tag) {
