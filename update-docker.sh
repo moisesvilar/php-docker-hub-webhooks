@@ -1,3 +1,4 @@
+#!/bin/sh
 CONTAINER="container_name"
 REPO="user/repo"
 docker stop $CONTAINER
